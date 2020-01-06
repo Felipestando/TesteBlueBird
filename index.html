@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blue Bird Shoes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Amiko' rel='stylesheet'>
+
+	<style type="text/css">
+
+		.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background:rgba(200, 200, 200, 0.8) ;
+}
+
+.swiper-slide:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+    .swiper-container {
+      width: 70%;
+      height: 25%;
+      margin-top: 900px ;
+      text-decoration: none;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    
+    }
+    .swiper-slide2 {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    }
+    .swiper-slide3 {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    }
+    .swiper-slide4 {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    }
+    .swiper-slide5 {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    }
+    .swiper-slide6 {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    }
+
+		.busca{
+			background: url(Imagens/lupa.png) no-repeat center right;
+			padding: 5px;
+			border:none;
+			margin-left: 1360px;
+			margin-top: 30px;
+			width: 20px;
+			transition: all 0.5s linear;
+		
+		}
+
+
+		.busca:focus{
+			width: 150px;
+			border-bottom: solid 1px #ddd;
+			outline: none;
+		}
+
+		.nome{
+			padding: 5px;
+			width: 230px;
+			background:rgba(200, 200, 200, 0.2)
+		}
+
+		.email{
+			padding: 5px;
+			width: 130px;
+			background:rgba(200, 200, 200, 0.2)
+		}
+		.nav-1 {
+			position: absolute;
+			top: 95px;
+			left: 350px;
+			width: 196px;
+			height: 98px;
+			text-decoration: none;	
+			color: #4a4a4a;	
+
+}
+
+		.nav-2 {
+			position: absolute;
+			top: 95px;
+			left: 458px;
+			width: 196px;
+			height: 98px;	
+			color: #4a4a4a;		
+}
+
+		.nav-3 {
+			position: absolute;
+			top: 95px;
+			left: 580px;
+			width: 196px;
+			height: 98px;
+			color: #4a4a4a;			
+}
+
+		.nav-4 {
+			position: absolute;
+			top: 95px;
+			left: 898px;
+			width: 196px;
+			height: 98px;		
+			color: #4a4a4a;	
+}
+
+		.nav-5 {
+			position: absolute;
+			top: 95px;
+			left: 980px;
+			width: 196px;
+			height: 98px;
+			color: #4a4a4a;			
+}
+
+		.nav-6 {
+			position: absolute;
+			top: 95px;
+			left: 1080px;
+			width: 196px;
+			height: 98px;
+			color: #4a4a4a;			
+}
+		.nav-ul{
+
+			list-style: none;
+			text-decoration: none;
+		}
+
+		.nav-li{
+			float: left;
+			text-decoration: none;
+		}
+
+		.nav-a {
+			display: block;
+			height: 60px;
+			width: 1000px;
+			padding:  40 60px;
+			font-size: 14px;
+			line-height: 30px;
+			text-align: center;
+			text-decoration: none;
+			font-weight: bold;
+			color: black;
+		}
+
+		.logo {
+			position: absolute;
+			top: 50px;
+			left: 663px;
+			width: 196px;
+			height: 98px;
+
+		}
+
+		
+		.banner {
+			position: absolute;
+			top: 185px;
+			left: 25px;
+			width: 1535px;
+			height: 608px;
+		}
+
+		.h2 {
+			position: absolute;
+			top:838px; 
+			left: 700px;
+			font-size: 35px;
+			color: gray;
+			font-family: arial;
+
+		}
+
+		.h6 {
+			position: absolute;
+			top:900px; 
+			left: 515px;
+			font-size: 20px;
+			color: gray;
+			font-family: arial;
+
+		}
+
+		.carousel1 {
+			position: absolute;
+			top: 1100px;
+			left: 250px;
+			width: 100px;
+			height: 100%;
+
+		}
+
+		.div-sub {
+	    width: 100%;
+	}
+
+		.banner1 {
+			position: absolute;
+			top: 1500px;
+			left: 25px;
+			width: 30px;
+			height: 30px;
+		}
+
+		.h2banner1 {
+			position: absolute;
+			top:1700px; 
+			left: 1150px;
+			font-size: 15px;
+			text-decoration: underline;
+			color: #6973a2;
+			font-family: 'Amiko';
+		}
+
+		.h3banner1 {
+			position: absolute;
+			top:1800px; 
+			left: 1080px;
+			font-size: 11px;
+			color: #090909;
+			font-family:'Amiko';
+			text-align: center;
+		}
+
+		.blocktext {
+			text-align: center;
+
+    width: 15em
+}
+		
+		.banner2 {
+			position: absolute;
+			top: 2200px;
+			left: 750px;
+			width: 575px;
+			height: 479px;
+		}
+
+		.h2banner2 {
+			position: absolute;
+			top:2325px; 
+			left: 350px;
+			font-size: 15px;
+			text-decoration: underline;
+			color: #6973a2;
+			font-family:'Amiko';
+
+		}
+
+		.h3banner2 {
+			position: absolute;
+			top:2425px; 
+			left: 270px;
+			font-size: 11px;
+			color: #090909;
+			font-family:'Amiko';
+			text-align: center;
+
+		}
+		
+
+		.banner3 {
+			position: absolute;
+			top: 2900px;
+			left: 25px;
+			width: 30px;
+			height: 30px;
+		}
+
+		.h2banner3 {
+			position: absolute;
+			top:2970px; 
+			left:1100px;
+			font-size: 15px;
+			text-decoration: underline;
+			color: #6973a2;
+			font-family:'Amiko';
+		}
+
+		.h3banner3 {
+			position: absolute;
+			top:3070px; 
+			left:1060px;
+			font-size: 11px;
+			color: #090909;
+			font-family:'Amiko';
+			text-align: center;
+		}
+		
+		.banner4 {
+			position: absolute;
+			top: 3590px;
+			left: 816px;
+			width: 30px;
+			height: 30px;
+		}
+
+		.h2banner4 {
+			position: absolute;
+			top:3710px; 
+			left: 350px;
+			font-size: 15px;
+			text-decoration: underline;
+			color: #6973a2;
+			font-family:'Amiko';
+
+		}
+
+		.h3banner4 {
+			position: absolute;
+			top:3810px; 
+			left: 320px;
+			font-size: 11px;
+			color: #090909;
+			font-family: 'Amiko';
+			text-align: center;
+		}
+		
+		.banner5 {
+			position: absolute;
+			top: 4300px;
+			left: 25px;
+			width: 30px;
+			height: 30px;
+		}
+
+		.h2banner5 {
+			position: absolute;
+			top:4490px; 
+			left: 1100px;
+			font-size: 15px;
+			text-decoration: underline;
+			color: #6973a2;
+			font-family: 'Amiko';
+		}
+
+		.h3banner5 {
+			position: absolute;
+			top:4590px; 
+			left: 1080px;
+			font-size: 11px;
+			color: #090909;
+			font-family: 'Amiko';
+			text-align: center;
+
+		}
+		
+
+		.banner6 {
+			position: absolute;
+			top: 5100px;
+			left: 25px;
+			width: 1535px;
+			height: 608px;
+		}
+
+		.botao-enviar {
+			top:4630px;
+			left: 1159px;
+ 			border: none;
+  			color: white;
+  			padding: 7px 25px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 14px;
+  			margin: 5px -5px;
+  			cursor: pointer;
+  			background-color: #273578;
+}		
+	
+		.button {
+			top:4630px;
+			left: 1159px;
+ 			background-color: #65c4b6;
+ 			border: none;
+  			color: white;
+  			padding: 1px 36px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 14px;
+  			margin: 5px -5px;
+  			cursor: pointer;
+}		
+
+		.button2 {
+			top:2525px;
+			left: 290px;
+ 			background-color: #273578;
+ 			border: none;
+  			color: white;
+  			padding: 1px 36px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 14px;
+  			margin: 5px -7px;
+  			cursor: pointer;
+}		
+
+		.button3 {
+			top:3170px;
+			left: 1259px;
+ 			background-color: #65c4b6;
+ 			border: none;
+  			color: white;
+  			padding: 1px 36px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 14px;
+  			margin: 5px -8px;
+  			cursor: pointer;
+}		
+
+		.button4 {
+			top:3810px;
+			left: 450px;
+ 			background-color: #273578;
+ 			border: none;
+  			color: white;
+  			padding: 1px 36px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 14px;
+  			margin: 5px -8px;
+  			cursor: pointer;
+}		
+
+		.button5 {
+			top:4690px;
+			left: 1059px;
+ 			background-color: #65c4b6;
+ 			border: none;
+  			color: white;
+  			padding: 1px 36px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 14px;
+  			margin: 5px -9px;
+  			cursor: pointer;
+}		
+
+		.botao {
+
+		position: absolute;
+			top: 5458px;
+			left: 675px;
+			width: 256px;
+			height: 49px;
+		}
+
+		.rodape-final{
+			position: absolute;
+			bottom: -5390px;
+			width: 100%;
+			
+			color: #6973a2;
+			display: flex;
+			justify-content: space-around;
+			border-top-color: #6973a2;
+			border-left-color: #6973a2;
+			border-color: #6973a2;
+		}
+
+		*{
+			padding: 0px;
+			margin: 0px;
+			box-sizing: border-box;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<header>
+
+		<div>
+		<div>
+			<img src="Imagens/localizacao.png" style="width: 21px; height: 21px; margin-top: 25px; margin-left: 25px;" > <p style=" margin-top:-21px; margin-left: 50px;"> <a href="https://g.page/blue-bird-jardim-paulistano?share" style="text-decoration: none; color: #6973a2"> NOSSAS LOJAS </a> </p>
+		</div>
+
+
+		<div>
+
+			
+			<img src="Imagens/Bolsa.png" style="margin-top: -21px; margin-left: 1305px;"> 
+			<p style="margin-top: -23px; margin-left: 1190px; color: #6973a2"> MY BLUE'S  0</p>
+		
+			<P style="margin-top: -17px; margin-left: 1350px;"> <a href="https://bluebirdshoes.com.br/customer/account/login/" style="text-decoration: none; color: #6973a2 "> SIGN IN </a> |<a href="https://bluebirdshoes.com.br/customer/account/create/" style="text-decoration: none; color: #6973a2"> CADASTRE-SE </a> </P>
+
+		</div>
+		
+		</div>
+		<div>
+			<input type="search" name="busca" class="busca" placeholder="Buscar">
+
+		</div>
+
+    <div>
+    	<nav class="nav-ul nav-a-hover">
+    		<ul class="nav-ul">
+    			<li class=" nav-li nav-1">
+    				<a href="https://bluebirdshoes.com.br/feminino.html" class="nav-li" style="color: #4a4a4a">FEMININO</a>
+    			</li>
+    			<li class=" nav-li nav-2">
+    				<a href="https://bluebirdshoes.com.br/masculino.html" class="nav-li " style="color: #4a4a4a">MASCULINO</a>
+    			</li>
+    			<li class=" nav-li nav-3">
+    				<a href="https://bluebirdshoes.com.br/kids.html" class="nav-li" style="color: #4a4a4a">MINI</a>
+    			</li>
+    			<li class="nav-li nav-4">
+    				<a href="https://bluebirdshoes.com.br/linhas.html" class="nav-li" style="color: #4a4a4a">GIFTS</a>
+    			</li>
+    			<li class="nav-li nav-5">
+    				<a href="https://bluebirdshoes.com.br/acessorios.html" class="nav-li" style="color: #4a4a4a">BRIDES</a>
+    			</li>
+    			<li class="nav-li nav-6 ">
+    				<a href="https://bluebirdshoes.com.br/sale.html" class="nav-li" style="color: #4a4a4a">SALE</a>
+    			</li>
+    		</ul>
+
+    	</nav>
+    </div>
+
+	<div class="logo">
+		<a href="index.html">
+   		<img src="Imagens/Logo-Marinho.png">
+   		</a>
+    </div>
+</header>
+<section>
+    <div class="banner">
+   		<img src="Imagens/Screenshot_8.png">
+    </div>
+
+    <div>
+   	
+   	<h2 class="h2 div-sub">NEW IN</h2>
+   	<br>
+   	<br>
+   	<h6 class="h6 div-sub"> Nossa coleção de 2020, para começar o ano no estido </h6>
+    </div>
+ 
+ 	<div>
+ 		
+
+ 	</div>
+
+ 		
+ 		<div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide"><img src="Imagens/20191204_110411.jpg" style="width: 100%;height: 100%" alt="Avatar" class="image"> <div class="overlay">
+    <div class="text">MULE PLASTIC TIRAS VERMELHO</div>
+        
+      </div>
+</div>
+
+      <div class="swiper-slide"><img src="Imagens/bb115-a_1.jpg" style="width: 100%;height: 100%" alt="Avata" class="image"> <div class="overlay">
+    <div class="text">MULE CAMURÇA ROSA BIKINI</div>
+      </div>
+
+      </div>
+
+
+      <div class="swiper-slide"><img src="Imagens/c2033070503-a.jpg" style="width: 100%;height: 100%" alt="Avat" class="image">  <div class="overlay">
+    <div class="text">RASTEIRA TRANCOSO AZUL</div>
+  </div>
+
+</div>
+      <div class="swiper-slide"><img src="Imagens/s2010212736-a_1.jpg" style="width: 100%;height: 100%" alt="Ava" class="image"><div class="overlay">
+    <div class="text">SHOWER FLAT MIÇANGAS PRETO</div>
+      </div>
+
+      </div>
+
+
+      <div class="swiper-slide"><img src="Imagens/s20014810720-a.jpg" style="width: 100%;height: 100%" alt="Av" class="image"><div class="overlay">
+    <div class="text">LOAFER PALHA BORBOLETAS</div>
+      </div>
+      </div>
+      <div class="swiper-slide"><img src="Imagens/s20104101121-a.jpg" style="width: 100%;height: 100%" alt="A" class="image"><div class="overlay">
+    <div class="text">SHOWER FLAT CORAIS CAMURÇA LARANJA</div>
+      </div>
+      
+    </div>
+    </div>
+    </div>
+  
+    <div class="swiper-pagination" style="display: none"></div>
+  
+    <div class="swiper-button-next" style="margin-top: 840px;"></div>
+    <div class="swiper-button-prev" style="margin-top: 840px;"></div>
+  </div>
+
+
+  <script src="js/swiper.min.js"></script>
+
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      slidesPerGroup: 4,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+
+
+ 	<div>
+ 		
+ 		<div class="banner1">
+ 			<img src="Imagens/Screenshot_5.png">
+ 		</div>
+
+ 		<div class="h2banner1"> 
+
+ 			<h2>	 blog	 </h2>
+
+ 		</div>
+
+ 		<div class="h3banner1">
+ 			
+ 			<h3 class="blocktext">
+ 				
+ 				Lorem ipsum dolor sit amet, 
+ 				adipiscing elit, sed do eiusmod tempor incidid 
+ 				unt ut labore et dolore magna aliqua. 
+ 				Sed ut perspiciatis unde omnis iste natus error sit 
+ 				voluptatem accusantium doloremque laudantium. 
+ 				totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+
+ 			</h3>
+ 			<div class="button">
+ 				<a href="https://bluebirdshoes.com.br/new-in.html" class="button">DESCUBRA</a>
+ 			</div>
+ 		</div>
+
+ 	</div>
+
+ 	<div>
+ 		
+		<div class="banner2">
+			<img src="Imagens/Screenshot_4.png">
+		</div>
+
+		<div class="h2banner2"> 
+
+ 			<h2>	lojas	 </h2>
+ 		</div>
+
+ 		<div class="h3banner2">
+ 			
+ 			<h3 class="blocktext">
+ 				
+ 				Lorem ipsum dolor sit amet,
+				adipiscing elit, sed do eiusmod tempor incidid
+				unt ut labore et dolore magna aliqua.
+				Sed ut perspiciatis unde omnis iste natus error sit
+				voluptatem accusantium doloremque laudantium.
+				totam rem aperiam, eaque ipsa quae
+				ab illo inventore veritatis et
+
+ 			</h3>
+ 			<div class="button2">
+ 				<a href="https://bluebirdshoes.com.br/new-in.html" class="button2">DESCUBRA</a>
+ 			</div>
+ 		</div>
+
+ 	</div>
+ 	<div>
+ 		
+ 		<div class="banner3">
+ 			<img src="Imagens/Screenshot_3.png">
+ 		</div>
+
+	'<div class="h2banner3"> 
+
+ 			<h2>	 personalize	 </h2>
+ 		</div>
+
+ 		<div class="h3banner3">
+ 			
+ 			<h3 class="blocktext">
+ 				
+ 				Lorem ipsum dolor sit amet,
+				adipiscing elit, sed do eiusmod tempor incidid
+				unt ut labore et dolore magna aliqua.
+				Sed ut perspiciatis unde omnis iste natus error sit
+				voluptatem accusantium doloremque laudantium.
+				totam rem aperiam, eaque ipsa quae
+				ab illo inventore veritatis et
+
+ 			</h3>
+			<div class="button3">
+ 				<a href="https://bluebirdshoes.com.br/new-in.html" class="button3">DESCUBRA</a>
+ 			</div>
+
+ 		</div>
+
+ 	</div>
+
+ 	<div>
+ 		
+		<div class="banner4">
+			<img src="Imagens/Screenshot_1.png">
+		</div>
+
+		<div class="h2banner4"> 
+
+ 			<h2>	 lorem ipsum	 </h2>
+ 		</div>
+
+ 		<div class="h3banner4">
+ 			
+ 			<h3 class="blocktext">
+ 				
+ 				Lorem ipsum dolor sit amet,
+				adipiscing elit, sed do eiusmod tempor incidid
+				unt ut labore et dolore magna aliqua.
+				Sed ut perspiciatis unde omnis iste natus error sit
+				voluptatem accusantium doloremque laudantium.
+				totam rem aperiam, eaque ipsa quae
+				ab illo inventore veritatis et
+
+ 			</h3>
+ 				<div class="button4">
+ 				<a href="https://bluebirdshoes.com.br/new-in.html" class="button4">DESCUBRA</a>
+ 			</div>
+
+ 		</div>
+
+
+ 	</div>
+ 	<div>
+ 		
+		<div class="banner5">
+			<img src="Imagens/Screenshot_2.png">
+		</div>
+
+		<div class="h2banner5"> 
+
+ 			<h2>	 lorem ipsum	 </h2>
+ 		</div>
+
+ 		<div class="h3banner5">
+ 			
+ 			<h3 class="blocktext">
+ 				
+ 				Lorem ipsum dolor sit amet,
+				adipiscing elit, sed do eiusmod tempor incidid
+				unt ut labore et dolore magna aliqua.
+				Sed ut perspiciatis unde omnis iste natus error sit
+				voluptatem accusantium doloremque laudantium.
+				totam rem aperiam, eaque ipsa quae
+				ab illo inventore veritatis et
+
+ 			</h3>
+ 			<div class="button5">
+ 				<a href="https://bluebirdshoes.com.br/new-in.html" class="button5">DESCUBRA</a>
+ 			</div>
+ 		</div>
+
+
+ 	</div>
+
+ 	<div class="banner6">
+
+ 		<img src="Imagens/Screenshot_7.png">
+
+ 	</div>
+ 		
+ 	<div class="botao">
+ 		<a href="https://www.instagram.com/bluebirdshoes/" style="cursor: pointer;">
+ 		<img src="Imagens/Screenshot_9.png">
+ 		</a>
+ 	</div>
+</section>
+<hr style="bottom: -5200px; height: 2px; margin-top: 4530px; color: #f3f3f3 ; background-color: #f3f3f3">
+ 	<footer class="rodape-final" style="border-top-color: #6973a2;">
+ 		
+ 		<div>
+ 			ATENDIMENTO
+<br>
+<br>
+<br>
+
+ 			<ul class="nav-ul">
+ 				<li><a href="https://bluebirdshoes.com.br/termos-e-condicoes" style="text-decoration: none; color: #6973a2 "> Formas de Pagamento </a></li>
+ 				<br>
+ 				<li> <a href="https://bluebirdshoes.com.br/sobre-blue-bird" style="text-decoration: none; color: #6973a2 ">Política de Privacidade </a> </li>
+ 				<br>
+ 				<li> <a href="https://bluebirdshoes.com.br/termos-e-condicoes" style="text-decoration: none; color: #6973a2 ">Prazo de Entrega  </a> </li>
+ 				<br>
+ 				<li> <a href="https://bluebirdshoes.com.br/trocas-e-devolucoes" style="text-decoration: none; color: #6973a2 ">Trocas e Devoluções </a> </li>
+ 			</ul>
+ 		</div>
+
+ 		<div>
+ 			INFORMAÇÕES	
+ 			<br>
+<br>
+<br>
+
+ 			<ul class="nav-ul">
+ 				<li><a href="https://bluebirdshoes.com.br/termos-e-condicoes" style="text-decoration: none; color: #6973a2 "> Lorem Ipsum dolor </a></li>
+ 				<br>
+ 				<li> <a href="https://bluebirdshoes.com.br/sobre-blue-bird" style="text-decoration: none; color: #6973a2 ">Lorem Ipsum  </a> </li>
+ 				<br>
+ 				<li> <a href="https://bluebirdshoes.com.br/termos-e-condicoes" style="text-decoration: none; color: #6973a2 ">Lorem Ipsum dolor </a> </li>
+ 				<br>
+ 				<li> <a href="https://bluebirdshoes.com.br/trocas-e-devolucoes" style="text-decoration: none; color: #6973a2 ">Lorem Ipsum  </a> </li>
+ 			</ul>
+ 		</div>
+
+ 		<div> ENTRE EM CONTATO POR TELEFONE
+<br>
+<br>
+<br>
+
+ 			<ul class="nav-ul">
+ 				<li><a href="www.google.com" style="text-decoration: none; color: #6973a2 "> (11) 98465-0055 </a></li>
+ 				<br>
+ 				<li> (11) 98465-0055 </li>
+<br>
+<br>
+ 				<li><a href="https://www.facebook.com/bluebirdshoesbr"> <img src="Imagens/facebook-logo.png" style="width: 16px height: 16px;"></a>
+ 					<a href="https://www.instagram.com/bluebirdshoes/">
+ 				 <img src="Imagens/instagram.png" style="width: 16px height: 16px;">
+					</a>
+ 				  </li> 
+ 				
+ 			</ul>
+ 		</div>
+
+ 		<div> NEWLETTER
+
+ 			<ul class="nav-ul">
+ 				<li><a href="www.google.com" style="text-decoration: none; color: #6973a2 "> Cadastra-se para ficar por dentro das </a>
+ 				</li>
+ 				<li> novidades e ganhar 10% de desconto  </li>
+ 				<br>
+
+ 			<form action="/pagina-processa-dados-do-form" method="post">
+    <div>
+        <input type="text" id="name" placeholder="NOME"  class="nome" />
+    </div>
+    <br>
+    <div>
+        <input type="email" id="mail" placeholder="E-MAIL" class="email" />
+      
+        <a href="#" class="botao-enviar"> ENVIAR </a>
+    </div>
+    
+    
+</form>
+ 		</div>
+
+ 		
+ 	</footer>
+
+ 	<hr style="bottom: -4200px; height: 2px; margin-top: 250px; color: #f3f3f3">
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<div style="text-align: center; color: #6973a2">
+ 		
+ 		<p>Copyright - © 2017 Blue Bird Shoes - Todos os direitos reservados | CNPJ - 18.079.166/0001-00 | Alameda Gabriel Monteiro da Silva, 1358 - Jardim América - São Paulo/SP - CEP 01442-001 </p>
+ 	</div>
+<br>
+<br>
+<div>
+	<img src="Imagens/rodape.png" style="width: 100%;">
+
+</div>
+
+
+</body>
+</html>
